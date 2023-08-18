@@ -1,0 +1,37 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Mintable.sol": "UintLibrary"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Mintable.sol": {
+			"keccak256": "0x9a2aaaf7aba66475d012d5368330712cdcfdf0df5bfc931826da2b9ce71c6362",
+			"urls": [
+				"bzz-raw://2ca9a394c40aa0eae58e28796445a4489e2156fcd5a434d948c6a57bfddcb442",
+				"dweb:/ipfs/QmfWGz9jhuCZzi8qBdnCzDA1H9zu3sxdY8BiRkPPoFtAmy"
+			]
+		}
+	},
+	"version": 1
+}

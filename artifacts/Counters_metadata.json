@@ -1,0 +1,40 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"author": "Matt Condon (@shrugs)",
+			"details": "Provides counters that can only be incremented or decremented by one. This can be used e.g. to track the number of elements in a mapping, issuing ERC721 ids, or counting request ids. * Include with `using Counters for Counters.Counter;` Since it is not possible to overflow a 256 bit integer with increments of one, `increment` can skip the {SafeMath} overflow check, thereby saving gas. This does assume however correct usage, in that the underlying `_value` is never directly accessed.",
+			"methods": {},
+			"title": "Counters"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Mintable.sol": "Counters"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Mintable.sol": {
+			"keccak256": "0x9a2aaaf7aba66475d012d5368330712cdcfdf0df5bfc931826da2b9ce71c6362",
+			"urls": [
+				"bzz-raw://2ca9a394c40aa0eae58e28796445a4489e2156fcd5a434d948c6a57bfddcb442",
+				"dweb:/ipfs/QmfWGz9jhuCZzi8qBdnCzDA1H9zu3sxdY8BiRkPPoFtAmy"
+			]
+		}
+	},
+	"version": 1
+}

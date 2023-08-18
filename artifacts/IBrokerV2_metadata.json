@@ -1,0 +1,422 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_mintableToken",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_erc20Token",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "isNotClubare",
+						"type": "bool"
+					}
+				],
+				"name": "accpetOffer",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "tokenID",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "_mintableToken",
+								"type": "address"
+							}
+						],
+						"internalType": "struct IBrokerV2.Pair[]",
+						"name": "_pairs",
+						"type": "tuple[]"
+					}
+				],
+				"name": "batchDelisting",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "_tokenID",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "_startingPrice",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "_auctionType",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "_buyPrice",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "_startingTime",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "_closingTime",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "_mintableToken",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "_erc20Token",
+								"type": "address"
+							}
+						],
+						"internalType": "struct IBrokerV2.Asset[]",
+						"name": "_assets",
+						"type": "tuple[]"
+					}
+				],
+				"name": "batchListing",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_mintableToken",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "bid",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_mintableToken",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "isNotClubare",
+						"type": "bool"
+					}
+				],
+				"name": "buy",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_mintableToken",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "isNotClubare",
+						"type": "bool"
+					}
+				],
+				"name": "collect",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_mintableToken",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_erc20Token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "makeAnOffer",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_tokenID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_startingPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_auctionType",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_buyPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_startingTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_closingTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_mintableToken",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_erc20Token",
+						"type": "address"
+					}
+				],
+				"name": "putOnSale",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_mintableToken",
+						"type": "address"
+					}
+				],
+				"name": "putSaleOff",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_mintableToken",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenID",
+						"type": "uint256"
+					}
+				],
+				"name": "revertAll",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_mintableToken",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_erc20Token",
+						"type": "address"
+					}
+				],
+				"name": "revertOffer",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_weth",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_stakeaddress",
+						"type": "address"
+					}
+				],
+				"name": "setAddress",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_mintableToken",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_newPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_erc20Token",
+						"type": "address"
+					}
+				],
+				"name": "updatePrice",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"AdminManger.sol": "IBrokerV2"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"AdminManger.sol": {
+			"keccak256": "0x29e29aed045aeb0b2e1274f511cd2ba96cf9351e2f41ca142f3f2ec4ad441d3f",
+			"urls": [
+				"bzz-raw://8e8750624e6b556c10da40c9f914b9741cb1734e41c3b54236bf6477bd590c50",
+				"dweb:/ipfs/QmVGaCjgAdZDWuBmSQzx98nEzcHQWv1teu6XFZAnDUE3UJ"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,37 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"TokenDetArrayLib.sol": "TokenDetArrayLib"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"TokenDetArrayLib.sol": {
+			"keccak256": "0x914a1ee401488a898fdddcdb35722da864f366f0ca9af2f6a89da3c2c9516217",
+			"urls": [
+				"bzz-raw://894a99ab5fe6367266d2517cfca0e25e176fda4d982b9eefd18c426d8fafbeb9",
+				"dweb:/ipfs/QmeaKfwyGdeGgje1VGj76qedrKgEBm3aG9cYKWUPWqz7H7"
+			]
+		}
+	},
+	"version": 1
+}

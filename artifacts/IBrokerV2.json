@@ -1,0 +1,452 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"görli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"goerli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"deployedBytecode": {
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"gasEstimates": null,
+		"methodIdentifiers": {
+			"accpetOffer(uint256,address,address,bool)": "5aa8680a",
+			"batchDelisting((uint256,address)[])": "3e54d3a2",
+			"batchListing((uint256,uint256,uint256,uint256,uint256,uint256,address,address)[])": "efb7027b",
+			"bid(uint256,address,uint256)": "c0f4ed31",
+			"buy(uint256,address,bool)": "7ad157b9",
+			"collect(uint256,address,bool)": "8c6ab013",
+			"makeAnOffer(uint256,address,address,uint256)": "3169b515",
+			"putOnSale(uint256,uint256,uint256,uint256,uint256,uint256,address,address)": "640cf873",
+			"putSaleOff(uint256,address)": "179443f3",
+			"revertAll(address,uint256)": "1f90607a",
+			"revertOffer(address,uint256,address)": "136a6a24",
+			"setAddress(address,address)": "3b58524d",
+			"updatePrice(uint256,address,uint256,address)": "ff8edbdb"
+		}
+	},
+	"abi": [
+		{
+			"constant": false,
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "tokenID",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "_mintableToken",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_erc20Token",
+					"type": "address"
+				},
+				{
+					"internalType": "bool",
+					"name": "isNotClubare",
+					"type": "bool"
+				}
+			],
+			"name": "accpetOffer",
+			"outputs": [],
+			"payable": true,
+			"stateMutability": "payable",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [
+				{
+					"components": [
+						{
+							"internalType": "uint256",
+							"name": "tokenID",
+							"type": "uint256"
+						},
+						{
+							"internalType": "address",
+							"name": "_mintableToken",
+							"type": "address"
+						}
+					],
+					"internalType": "struct IBrokerV2.Pair[]",
+					"name": "_pairs",
+					"type": "tuple[]"
+				}
+			],
+			"name": "batchDelisting",
+			"outputs": [],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [
+				{
+					"components": [
+						{
+							"internalType": "uint256",
+							"name": "_tokenID",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "_startingPrice",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "_auctionType",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "_buyPrice",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "_startingTime",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "_closingTime",
+							"type": "uint256"
+						},
+						{
+							"internalType": "address",
+							"name": "_mintableToken",
+							"type": "address"
+						},
+						{
+							"internalType": "address",
+							"name": "_erc20Token",
+							"type": "address"
+						}
+					],
+					"internalType": "struct IBrokerV2.Asset[]",
+					"name": "_assets",
+					"type": "tuple[]"
+				}
+			],
+			"name": "batchListing",
+			"outputs": [],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "tokenID",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "_mintableToken",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "amount",
+					"type": "uint256"
+				}
+			],
+			"name": "bid",
+			"outputs": [],
+			"payable": true,
+			"stateMutability": "payable",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "tokenID",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "_mintableToken",
+					"type": "address"
+				},
+				{
+					"internalType": "bool",
+					"name": "isNotClubare",
+					"type": "bool"
+				}
+			],
+			"name": "buy",
+			"outputs": [],
+			"payable": true,
+			"stateMutability": "payable",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "tokenID",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "_mintableToken",
+					"type": "address"
+				},
+				{
+					"internalType": "bool",
+					"name": "isNotClubare",
+					"type": "bool"
+				}
+			],
+			"name": "collect",
+			"outputs": [],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "tokenID",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "_mintableToken",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_erc20Token",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "amount",
+					"type": "uint256"
+				}
+			],
+			"name": "makeAnOffer",
+			"outputs": [],
+			"payable": true,
+			"stateMutability": "payable",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_tokenID",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_startingPrice",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_auctionType",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_buyPrice",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_startingTime",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_closingTime",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "_mintableToken",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_erc20Token",
+					"type": "address"
+				}
+			],
+			"name": "putOnSale",
+			"outputs": [],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "tokenID",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "_mintableToken",
+					"type": "address"
+				}
+			],
+			"name": "putSaleOff",
+			"outputs": [],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_mintableToken",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "tokenID",
+					"type": "uint256"
+				}
+			],
+			"name": "revertAll",
+			"outputs": [],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_mintableToken",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "tokenID",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "_erc20Token",
+					"type": "address"
+				}
+			],
+			"name": "revertOffer",
+			"outputs": [],
+			"payable": true,
+			"stateMutability": "payable",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_weth",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_stakeaddress",
+					"type": "address"
+				}
+			],
+			"name": "setAddress",
+			"outputs": [],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"constant": false,
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "tokenID",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "_mintableToken",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_newPrice",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address",
+					"name": "_erc20Token",
+					"type": "address"
+				}
+			],
+			"name": "updatePrice",
+			"outputs": [],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "function"
+		}
+	]
+}

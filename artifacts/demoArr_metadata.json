@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "Cache",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "WithoutCache",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"demo.sol": "demoArr"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"demo.sol": {
+			"keccak256": "0xbed43ae2d9a88f44643b32dfcd40078ae6f576aeda0d73a5a9f53f94798b1e3c",
+			"urls": [
+				"bzz-raw://10c3580d573ed28c5adfc9a76e7f63dd4d918dfd69281fb44d9dec84d968cb39",
+				"dweb:/ipfs/QmWKDji5CcjPGF7yYBzpAN4FJtS4XSZSs5vrSuUfVAYzcX"
+			]
+		}
+	},
+	"version": 1
+}

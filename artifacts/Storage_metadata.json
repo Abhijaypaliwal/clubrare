@@ -1,0 +1,532 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "LPStakeAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "StakeAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "WETHAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "auctions",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "lastOwner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "currentBid",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address payable",
+						"name": "highestBidder",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "auctionType",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "startingPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "buyPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "buyer",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "startingTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "closingTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "erc20Token",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getAuctionTokensForSale",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "NFTAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "tokenID",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct TokenDetArrayLib.TokenDet[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getErc20Tokens",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address[]",
+								"name": "array",
+								"type": "address[]"
+							}
+						],
+						"internalType": "struct ERC20Addresses.erc20Addresses",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getFixedPriceTokensForSale",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "NFTAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "tokenID",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct TokenDetArrayLib.TokenDet[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getTokensForSale",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "NFTAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "tokenID",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct TokenDetArrayLib.TokenDet[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "getTokensForSalePerUser",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "NFTAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "tokenID",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct TokenDetArrayLib.TokenDet[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "isOwner",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "lpStakefeepercentage",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "",
+						"type": "uint16"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "offerprice",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "offerer",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "platFormFeePercentage",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "",
+						"type": "uint16"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "rewardDistributionPercentage",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "",
+						"type": "uint16"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_weth",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_rewardDistributionAddress",
+						"type": "address"
+					}
+				],
+				"name": "setAddress",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_rewardDistributionAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_lpStakeAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_lpStakefeepercentage",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_rewardDistributionPercentage",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_platFormFeePercentage",
+						"type": "uint16"
+					}
+				],
+				"name": "setBrokerage",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_updateTime",
+						"type": "uint256"
+					}
+				],
+				"name": "setUpdatedClosingTime",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "updateClosingTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"isOwner()": {
+					"details": "Returns true if the caller is the current owner."
+				},
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Storage.sol": "Storage"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ERC20Addresses.sol": {
+			"keccak256": "0x3ce0eddfaea69964074e7db8a0dbfaa2d01856d10d0c120516115c76f735b032",
+			"urls": [
+				"bzz-raw://0e7d74a18eb9d1c18e0db1011b431fb3b85a0663a68f9d3e7987f494b16e9078",
+				"dweb:/ipfs/QmXcGYSwBpVjTZgoehqZq1YqpVuVdyHF9v7zXDesFHc4kb"
+			]
+		},
+		"Storage.sol": {
+			"keccak256": "0x36ba8991c7139fc506e3763edbb3380a09f03ff0ec73857ee50c125344cb478d",
+			"urls": [
+				"bzz-raw://01ae6907d95b200a9aa3a6f7a692e7bbf48a99f25f382c1c938657db2356b178",
+				"dweb:/ipfs/QmXfhVwKRxBKqmBaRT9xoppouerTzToZtp47LBwt348tmM"
+			]
+		},
+		"TokenDetArrayLib.sol": {
+			"keccak256": "0x459b6777d937e52fb786b56ca3469b9291eaddd1009ae3c812964cdc891b3a19",
+			"urls": [
+				"bzz-raw://1dce017d48e148405bcb346749678309a446a004f98c1b35c95f3a54c8a79031",
+				"dweb:/ipfs/Qmbs5zwxchqRxap897cKx7AiVy8j95nfha3TTtztbCPF6u"
+			]
+		},
+		"ownable.sol": {
+			"keccak256": "0x5e2a25e49436a7b8c68d3c6cb9b59163d895311bec3677a30bfad13aef6bd011",
+			"urls": [
+				"bzz-raw://1a4a466535e13aa58e660cfefff3fdb66d22ed46d7a6524feab4910c8d0826a1",
+				"dweb:/ipfs/QmNmdXMZSUthj7iH71HYqGE5atx1F3jhdXQ6P6hF72eoBi"
+			]
+		}
+	},
+	"version": 1
+}

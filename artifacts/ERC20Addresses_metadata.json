@@ -1,0 +1,37 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ERC20Addresses.sol": "ERC20Addresses"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ERC20Addresses.sol": {
+			"keccak256": "0x3ce0eddfaea69964074e7db8a0dbfaa2d01856d10d0c120516115c76f735b032",
+			"urls": [
+				"bzz-raw://0e7d74a18eb9d1c18e0db1011b431fb3b85a0663a68f9d3e7987f494b16e9078",
+				"dweb:/ipfs/QmXcGYSwBpVjTZgoehqZq1YqpVuVdyHF9v7zXDesFHc4kb"
+			]
+		}
+	},
+	"version": 1
+}

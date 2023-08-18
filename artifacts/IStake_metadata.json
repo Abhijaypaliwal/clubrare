@@ -1,0 +1,88 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "receiveWETHFee",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"BrokerV2.sol": "IStake"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"BrokerV2.sol": {
+			"keccak256": "0xce3db6f952f9304d0e9a3374aa32ffc1d4ba98bc5e066be8b19300aff992b83d",
+			"urls": [
+				"bzz-raw://44f666d8ac74933ee6945b60b0a564abffa43541a4e15f2ec73303b5f55ceb1c",
+				"dweb:/ipfs/QmUXW5VWwoLkrookVjEPkZG2X9uTFz7hHjNetXucmWvmaR"
+			]
+		},
+		"ERC20Addresses.sol": {
+			"keccak256": "0x3ce0eddfaea69964074e7db8a0dbfaa2d01856d10d0c120516115c76f735b032",
+			"urls": [
+				"bzz-raw://0e7d74a18eb9d1c18e0db1011b431fb3b85a0663a68f9d3e7987f494b16e9078",
+				"dweb:/ipfs/QmXcGYSwBpVjTZgoehqZq1YqpVuVdyHF9v7zXDesFHc4kb"
+			]
+		},
+		"Storage.sol": {
+			"keccak256": "0x36ba8991c7139fc506e3763edbb3380a09f03ff0ec73857ee50c125344cb478d",
+			"urls": [
+				"bzz-raw://01ae6907d95b200a9aa3a6f7a692e7bbf48a99f25f382c1c938657db2356b178",
+				"dweb:/ipfs/QmXfhVwKRxBKqmBaRT9xoppouerTzToZtp47LBwt348tmM"
+			]
+		},
+		"TokenDetArrayLib.sol": {
+			"keccak256": "0x459b6777d937e52fb786b56ca3469b9291eaddd1009ae3c812964cdc891b3a19",
+			"urls": [
+				"bzz-raw://1dce017d48e148405bcb346749678309a446a004f98c1b35c95f3a54c8a79031",
+				"dweb:/ipfs/Qmbs5zwxchqRxap897cKx7AiVy8j95nfha3TTtztbCPF6u"
+			]
+		},
+		"brokermodifier.sol": {
+			"keccak256": "0x5d476a51cf6f56ce99ed21db61fea98e34c8799297a1f385269ddcfb7182f90e",
+			"urls": [
+				"bzz-raw://bdc26a4e407ca7fc13842a27131eb524ed947a55571582073e0ddb4582b7036c",
+				"dweb:/ipfs/QmNnjuuEoE6qw1UiEAngy6BpKuGLvBzgCFCaZ1RYa1GegK"
+			]
+		},
+		"ownable.sol": {
+			"keccak256": "0x5e2a25e49436a7b8c68d3c6cb9b59163d895311bec3677a30bfad13aef6bd011",
+			"urls": [
+				"bzz-raw://1a4a466535e13aa58e660cfefff3fdb66d22ed46d7a6524feab4910c8d0826a1",
+				"dweb:/ipfs/QmNmdXMZSUthj7iH71HYqGE5atx1F3jhdXQ6P6hF72eoBi"
+			]
+		}
+	},
+	"version": 1
+}
